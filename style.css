@@ -1,0 +1,29 @@
+body {
+  background: #111;
+  font-family: Verdana;
+}
+
+.app {
+  background: #ddd;
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  height: 400px;
+}
+
+h2 {
+  font-family: Verdana;
+}
+
+button {
+  border: none;
+  background: royalblue;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+}

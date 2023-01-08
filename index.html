@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markov</title>
+    <script src="https://unpkg.com/js-markov/dist/markov.js"></script>
+    <script src="./output/markov.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h2>Markov chain generator</h2>
+      <button onClick="generate()">generate!</button>
+      <hr />
+      <p id="result"></p>
+    </div>
+
+    <script>
+      var markov = new Markov()
+      markov.start = markovTrained.start
+      markov.states = markovTrained.states
+      markov.possibilities = markovTrained.possibilities
+      markov.setOrder(10)
+
+      const generate = () => {
+        const result = markov.generateRandom(200)
+        document.getElementById("result").innerHTML = result
+      }
+    </script>
+  </body>
+</html>

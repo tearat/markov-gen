@@ -1,0 +1,17 @@
+{
+  "name": "markov-gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "trainer.js",
+  "scripts": {
+    "start": "node trainer.js"
+  },
+  "keywords": [
+    "markov"
+  ],
+  "author": "tearat",
+  "license": "ISC",
+  "dependencies": {
+    "js-markov": "^3.0.3"
+  }
+}
